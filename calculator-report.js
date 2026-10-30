@@ -11,11 +11,6 @@ function calculateCarbon() {
     const revenue = credits * 10; // $10 per credit
 
     // Update UI
-    // document.getElementById('credit-display').innerText = `${credits} tCO2e`;
-    // Purana code: 
-// document.getElementById('credit-display').innerText = `${credits} tCO2e`;
-
-// Naya code (Sirf number update karein, text nikal dein kyunki UI mein text pehle se hai):
 document.getElementById('credit-display').innerText = credits;
 if(document.getElementById('revenue-display')) {
     document.getElementById('revenue-display').innerText = `$${(credits * 10).toLocaleString()}`;
